@@ -209,6 +209,34 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         grid-template-columns: 1fr;
       }
     }
+    /* DEPOIMENTOS */
+.depoimentos {
+  background: #f8f8f8;
+  padding: 80px 20px;
+}
+
+.depoimentos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.depoimento-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 6px 14px rgba(0,0,0,.08);
+  font-size: 16px;
+}
+
+.depoimento-card strong {
+  display: block;
+  margin-top: 15px;
+  color: #e63946;
+}
+
   </style>
 </head>
 
@@ -278,6 +306,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="card">♻<br><strong>Descarte correto</strong><br>Responsabilidade ambiental</div>
       <div class="card">📄<br><strong>Regularização</strong><br>CDF e MTR (SINIR)</div>
       <div class="card">💰<br><strong>Preço justo</strong><br>Excelente custo-benefício</div>
+    </div>
+  </div>
+</section>
+
+  <section class="depoimentos">
+  <div class="container">
+    <h2>O que nossos <span>clientes dizem</span></h2>
+
+    <div class="depoimentos-grid">
+      <div class="depoimento-card">
+        Atendimento rápido e muito profissional. Recomendo!
+        <strong>— Cliente Garcia Caçambas</strong>
+      </div>
+
+      <div class="depoimento-card">
+        Empresa séria, entrega no prazo e sem dor de cabeça.
+        <strong>— Cliente Garcia Caçambas</strong>
+      </div>
+
+      <div class="depoimento-card">
+        Já aluguei várias vezes, sempre com ótimo atendimento.
+        <strong>— Cliente Garcia Caçambas</strong>
+      </div>
     </div>
   </div>
 </section>
