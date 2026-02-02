@@ -149,12 +149,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
 
     .security-content {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 20px;
-      flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
     }
+
+    
 
     .security-content h3 {
       font-size: 30px;
@@ -270,6 +271,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   font-weight: bold;
   box-shadow: 0 4px 10px rgba(0,0,0,.08);
 }
+@media (max-width: 768px) {
+  .security-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .security-content h3 {
+    font-size: 22px;
+  }
+}
 
   </style>
 </head>
@@ -315,7 +326,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <h2>Materiais que <span>Recolhemos</span></h2>
 
     <p class="materiais-intro">
-      Trabalhamos com descarte responsável de diversos tipos de materiais de construção e reformas:
+      Trabalhamos com descarte responsável de diversos tipos de materiais:
     </p>
 
     <div class="materiais-grid">
