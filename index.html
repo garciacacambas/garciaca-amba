@@ -281,6 +281,39 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     font-size: 22px;
   }
 }
+.pagamentos {
+  background: #fff;
+  padding: 80px 20px;
+}
+
+.pagamentos h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.pagamentos-intro {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #555;
+}
+
+.pagamentos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.pagamento-card {
+  background: #f8f8f8;
+  border-radius: 12px;
+  padding: 25px;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0,0,0,.08);
+  font-size: 18px;
+}
 
   </style>
 </head>
@@ -365,6 +398,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       Atendemos todos os bairros da cidade, com agilidade e preço justo.
       Vendemos areia e pedra entregues diretamente na caçamba.
     </p>
+  </div>
+</section> 
+  
+<section class="pagamentos">
+  <div class="container">
+    <h2>Formas de <span>Pagamento</span></h2>
+
+    <p class="pagamentos-intro">
+      Facilitamos o pagamento para melhor atender você:
+    </p>
+
+    <div class="pagamentos-grid">
+      <div class="pagamento-card">💵 Dinheiro</div>
+      <div class="pagamento-card">💳 Cartão de Crédito</div>
+      <div class="pagamento-card">💳 Cartão de Débito</div>
+      <div class="pagamento-card">📲 Pix</div>
+      <div class="pagamento-card">🏦 Transferência</div>
+    </div>
   </div>
 </section>
 
