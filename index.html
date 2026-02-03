@@ -1,624 +1,207 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-MQMFXZPF');</script>
-<!-- End Google Tag Manager -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Garcia Caçambas | Aluguel de Caçambas em Rondonópolis</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aluguel de Caçambas em Rondonópolis | Garcia Caçambas</title>
 
-  <meta name="description" content="Garcia Caçambas - Aluguel de caçambas estacionárias em Rondonópolis - MT. Mais de 18 anos, empresa licenciada, emissão de CDF e MTR.">
+  <meta name="description" content="Aluguel de caçambas estacionárias em Rondonópolis. Entrega rápida, preço justo, descarte correto com CDF e MTR. Garcia Caçambas desde 2007.">
+  <meta name="keywords" content="aluguel de caçamba, caçamba estacionária, descarte de entulho, aluguel de caçambas em Rondonópolis">
+  <meta name="author" content="Garcia Caçambas">
+
+  <link rel="icon" href="favicon.ico">
 
   <style>
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
+      background: #f7f7f7;
       color: #222;
-      background: #fff;
-    }
-
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-
-    header {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background: #fff;
-      box-shadow: 0 2px 8px rgba(0,0,0,.1);
-      z-index: 1000;
-    }
-
-    .container {
-      max-width: 1200px;
-      margin: auto;
-      padding: 0 20px;
-    }
-
-    .header-content {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 15px 0;
-    }
-
-    .header-content img {
-      height: 60px;
-    }
-
-    .btn {
-      padding: 14px 22px;
-      border-radius: 6px;
-      font-weight: bold;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .btn-red {
-      background: #e63946;
-      color: #fff;
-    }
-
-    .btn-green {
-      background: #25d366;
-      color: #fff;
-    }
-
-    section {
-      padding: 100px 20px;
-    }
-
-    .hero {
-      padding-top: 160px;
-      background: #f8f8f8;
-    }
-
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 40px;
-      align-items: center;
-    }
-
-    h1 {
-      font-size: 46px;
-      margin-bottom: 20px;
-    }
-
-    h1 span {
-      color: #e63946;
-    }
-
-    p {
-      font-size: 18px;
       line-height: 1.6;
     }
 
-    .hero img {
-      width: 100%;
-      border-radius: 16px;
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
     }
 
-    h2 {
-      font-size: 38px;
-      text-align: center;
-      margin-bottom: 40px;
+    h1, h2 {
+      color: #222;
     }
 
     h2 span {
-      color: #e63946;
+      color: #f4a300;
     }
 
-    .cards {
+    section {
+      padding: 60px 0;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 28px;
+      background: #25d366;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: #111;
+      color: #fff;
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 36px;
+      margin-bottom: 15px;
+    }
+
+    .banner-alerta {
+      background: #ffe9e9;
+      border: 2px solid #ff0000;
+      padding: 20px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 20px;
     }
 
     .card {
       background: #fff;
-      border-radius: 12px;
       padding: 25px;
-      box-shadow: 0 6px 16px rgba(0,0,0,.08);
+      border-radius: 10px;
       text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     }
 
-    .gallery {
+    .depoimentos-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
-      gap: 15px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
     }
 
-    .gallery img {
-      width: 100%;
-      border-radius: 12px;
+    .depoimento-card {
+      background: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     }
 
-    .security-banner {
-      background: #e63946;
-      color: #fff;
-      padding: 60px 20px;
-    }
-
-    .security-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-    }
-
-    
-
-    .security-content h3 {
-      font-size: 30px;
-      margin: 0;
-    }
-
-    .vantagens p {
-      max-width: 800px;
-      margin: 0 auto 40px;
-      text-align: center;
-    }
-
-    .map-box {
-      width: 100%;
-      height: 400px;
-      border-radius: 16px;
-      overflow: hidden;
-      box-shadow: 0 8px 20px rgba(0,0,0,.15);
+    .depoimento-card img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      margin-bottom: 10px;
     }
 
     footer {
       background: #111;
-      color: #aaa;
-      padding: 50px 20px;
-    }
-
-    footer img {
-      height: 60px;
-      margin-bottom: 15px;
-    }
-
-    .footer-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-      gap: 30px;
-    }
-
-    .whatsapp-float {
-      position: fixed;
-      bottom: 25px;
-      right: 25px;
-      background: #25d366;
       color: #fff;
-      padding: 16px;
-      border-radius: 50%;
-      font-size: 22px;
-      box-shadow: 0 10px 25px rgba(0,0,0,.3);
+      text-align: center;
+      padding: 30px 0;
     }
-
-    @media (max-width: 900px) {
-      .hero-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-    /* DEPOIMENTOS */
-.depoimentos {
-  background: #f8f8f8;
-  padding: 80px 20px;
-}
-
-.depoimentos-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 20px;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.depoimento-card {
-  background: #fff;
-  border-radius: 12px;
-  padding: 25px;
-  box-shadow: 0 6px 14px rgba(0,0,0,.08);
-  font-size: 16px;
-  text-align: center;
-}
-
-.depoimento-card img {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 15px;
-}
-
-.depoimento-card p {
-  font-size: 16px;
-}
-
-.depoimento-card strong {
-  display: block;
-  margin-top: 12px;
-  color: #e63946;
-}
-
-.materiais-section {
-  background: #f8f8f8;
-  padding: 80px 20px;
-}
-
-.materiais-section h2 {
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.materiais-section h2 span {
-  color: #e63946;
-}
-
-.materiais-intro {
-  text-align: center;
-  margin-bottom: 30px;
-  color: #555;
-}
-
-.materiais-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 15px;
-}
-
-.material-card {
-  background: #fff;
-  padding: 14px;
-  border-radius: 8px;
-  text-align: center;
-  font-weight: bold;
-  box-shadow: 0 4px 10px rgba(0,0,0,.08);
-}
-@media (max-width: 768px) {
-  .security-content {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .security-content h3 {
-    font-size: 22px;
-  }
-}
-.pagamentos {
-  background: #fff;
-  padding: 80px 20px;
-}
-
-.pagamentos h2 {
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.pagamentos-intro {
-  text-align: center;
-  margin-bottom: 40px;
-  color: #555;
-}
-
-.pagamentos-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.pagamento-card {
-  background: #f8f8f8;
-  border-radius: 12px;
-  padding: 25px;
-  text-align: center;
-  font-weight: bold;
-  box-shadow: 0 4px 12px rgba(0,0,0,.08);
-  font-size: 18px;
-}
-.locais-atendemos {
-  background: #fff;
-  padding: 80px 20px;
-}
-
-.locais-atendemos h2 {
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.locais-atendemos h2 span {
-  color: #e63946;
-}
-
-.locais-intro {
-  text-align: center;
-  margin-bottom: 30px;
-  color: #555;
-}
-
-.locais-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 20px;
-  max-width: 900px;
-  margin: 0 auto 30px;
-}
-
-.local-card {
-  background: #f8f8f8;
-  border-radius: 10px;
-  padding: 20px;
-  text-align: center;
-  font-weight: bold;
-  box-shadow: 0 4px 10px rgba(0,0,0,.08);
-  font-size: 16px;
-}
-
-.locais-final {
-  text-align: center;
-  max-width: 800px;
-  margin: 0 auto;
-  font-size: 17px;
-}
-
   </style>
 </head>
 
 <body>
-  <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MQMFXZPF"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
 
-<header>
-  <div class="container header-content">
-    <img src="https://customer-assets.emergentagent.com/job_8006a432-3772-4973-9cff-69013561a336/artifacts/wqrtiby0_logogc-removebg-preview.png" alt="Garcia Caçambas">
-    <a href="https://wa.link/bgszfz" class="btn btn-green" target="_blank">WhatsApp</a>
+  <section class="hero">
+    <div class="container">
+      <h1>Aluguel de Caçambas em Rondonópolis</h1>
+      <p>Entrega rápida, preço justo e descarte ambiental correto</p>
+      <a class="btn" href="https://wa.me/5566996226999" target="_blank">Chamar no WhatsApp</a>
+    </div>
+  </section>
+
+  <div class="banner-alerta">
+    ⚠️ ATENÇÃO: Não solicitamos pagamento antecipado. Pagamento somente após a entrega da caçamba.
   </div>
-</header>
 
-<section class="hero">
-  <div class="container hero-grid">
-    <div>
-      <h1>Aluguel de <span>Caçambas</span> em Rondonópolis</h1>
+  <section>
+    <div class="container">
+      <h2>Sobre a <span>Garcia Caçambas</span></h2>
       <p>
-        Há mais de 18 anos atuando no ramo de aluguel de caçambas estacionárias,
-        com agilidade, preço justo e compromisso ambiental.
+        A Garcia Caçambas foi criada em 2007, quando Garcia iniciou sua trajetória dirigindo um caminhão simples e antigo, com poucas caçambas, trabalhando sozinho. Ele atendia o telefone, realizava as entregas e fazia toda a operação por conta própria. O primeiro escritório funcionava no fundo da casa de sua mãe.
       </p>
+      <p>
+        Ao longo dos anos, conquistamos clientes que permanecem conosco até hoje, seguindo essa trajetória de crescimento e confiança. Atualmente, contamos com uma frota maior de caminhões, máquinas pá carregadeira e uma base própria que abriga desde o setor administrativo até a triagem dos resíduos.
+      </p>
+      <p>
+        Todos os resíduos são destinados corretamente, com a empresa devidamente regularizada junto aos órgãos públicos, como SEMA e Prefeitura, garantindo responsabilidade ambiental e segurança para nossos clientes.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>Locais onde <span>Atendemos</span></h2>
+      <div class="grid">
+        <div class="card">🏢 Shopping</div>
+        <div class="card">🌾 Limpeza de Terreno</div>
+        <div class="card">🏗️ Construções</div>
+        <div class="card">🪚 Marcenaria</div>
+        <div class="card">🏭 Indústrias</div>
+        <div class="card">🏠 Residências</div>
+        <div class="card">🌳 Chácaras</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>Formas de <span>Pagamento</span></h2>
+      <div class="grid">
+        <div class="card">💳 Cartão de Crédito</div>
+        <div class="card">💵 Dinheiro</div>
+        <div class="card">🏦 PIX</div>
+        <div class="card">💳 Link de Pagamento</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="depoimentos">
+    <div class="container">
+      <h2>O que nossos <span>clientes dizem</span></h2>
+
+      <div class="depoimentos-grid">
+        <div class="depoimento-card">
+          <img src="https://i.pravatar.cc/100?img=12" alt="Cliente Garcia Caçambas">
+          <p>Excelente atendimento, entrega rápida e preço justo.</p>
+          <strong>João Silva</strong>
+        </div>
+
+        <div class="depoimento-card">
+          <img src="https://i.pravatar.cc/100?img=32" alt="Cliente Garcia Caçambas">
+          <p>Empresa séria, descarte correto e equipe atenciosa.</p>
+          <strong>Maria Oliveira</strong>
+        </div>
+
+        <div class="depoimento-card">
+          <img src="https://i.pravatar.cc/100?img=45" alt="Cliente Garcia Caçambas">
+          <p>Trabalho com eles há anos, nunca tive problema.</p>
+          <strong>Carlos Mendes</strong>
+        </div>
+      </div>
+
       <br>
-      <a href="https://wa.link/bgszfz" class="btn btn-red" target="_blank">Solicitar Orçamento</a>
-      <a href="tel:+5566996226999" class="btn btn-red" style="margin-left:10px;">Ligar Agora</a>
-    </div>
-
-    <img src="https://customer-assets.emergentagent.com/job_8006a432-3772-4973-9cff-69013561a336/artifacts/d3uwn83w_WhatsApp%20Image%202025-09-16%20at%2014.53.42.jpeg">
-  </div>
-</section>
-
-<section class="security-banner">
-  <div class="container security-content">
-    <h3>🚨 NÃO CAIA EM GOLPES! PAGAMENTO SOMENTE APÓS A ENTREGA.</h3>
-    <a href="https://wa.link/bgszfz" class="btn btn-green" target="_blank">Fale Conosco</a>
-  </div>
-</section>
-
-    <section>
-  <div class="container">
-    <h2>Sobre a <span>Garcia Caçambas</span></h2>
-
-<p>
-A <strong>Garcia Caçambas</strong> é uma empresa especializada em <strong>aluguel de caçambas estacionárias em Rondonópolis – MT</strong>, fundada em <strong>2007</strong> pelo seu idealizador, Garcia. A trajetória começou de forma simples, com apenas um caminhão antigo e poucas caçambas, trabalhando sozinho, realizando os atendimentos, dirigindo o caminhão e cuidando de toda a operação.
-</p>
-
-<p>
-No início, o escritório funcionava no fundo da casa de sua mãe, onde eram feitos os primeiros atendimentos e a organização dos serviços. Com muito esforço, dedicação e compromisso com o cliente, a empresa cresceu de forma sólida e responsável. Muitos clientes que confiaram no trabalho desde o começo seguem até hoje trabalhando conosco, acompanhando essa trajetória de crescimento.
-</p>
-
-<p>
-Atualmente, a Garcia Caçambas conta com uma frota moderna de caminhões, máquinas como pá carregadeira e uma base própria, onde funcionam o setor administrativo e o setor de triagem dos resíduos. Todo o material coletado passa por um processo correto de separação e é destinado aos locais apropriados, conforme as normas ambientais.
-</p>
-
-<p>
-A empresa atua de forma totalmente regularizada, com licenciamento junto aos órgãos públicos, como SEMA e Prefeitura, além da emissão de CDF (Certificado de Destinação Final) e MTR, garantindo segurança, responsabilidade ambiental e transparência em todos os serviços prestados.
-</p>
-
-<p>
-Com mais de 18 anos de experiência, a Garcia Caçambas atende obras, residências, comércios e indústrias em Rondonópolis, oferecendo agilidade, preço justo e compromisso com o descarte correto de resíduos.
-</p>
-
-  </div>
-</section> 
-
-  <section class="locais-atendemos">
-  <div class="container">
-    <h2>Locais onde <span>Atendemos</span></h2>
-
-    <p class="locais-intro">
-      Prestamos serviços de aluguel de caçambas em diversos tipos de locais:
-    </p>
-
-    <div class="locais-grid">
-      <div class="local-card">🏢<br>Shopping</div>
-      <div class="local-card">🌾<br>Limpeza de Terreno</div>
-      <div class="local-card">🏗️<br>Construções</div>
-      <div class="local-card">🪚<br>Marcenaria</div>
-      <div class="local-card">🏭<br>Indústrias</div>
-      <div class="local-card">🏠<br>Residências</div>
-      <div class="local-card">🌳<br>Chácaras</div>
-    </div>
-  </div>
-</section>
-
-<section class="materiais-section">
-  <div class="container">
-    <h2>Materiais que <span>Recolhemos</span></h2>
-
-    <p class="materiais-intro">
-      Trabalhamos com descarte responsável de diversos tipos de materiais:
-    </p>
-
-    <div class="materiais-grid">
-      <div class="material-card"> Móveis</div>
-      <div class="material-card"> Madeira</div>
-      <div class="material-card"> Saco de Cimento</div>
-      <div class="material-card"> Papelão</div>
-      <div class="material-card"> Plástico</div>
-      <div class="material-card"> Galho</div>
-      <div class="material-card"> Folhas</div>
-      <div class="material-card"> Matos</div>
-      <div class="material-card"> Latas de Tintas</div>
-      <div class="material-card"> Canos</div>
-      <div class="material-card"> Forro de PVC</div>
-      <div class="material-card"> Ferro</div>
-      <div class="material-card"> Gesso</div>
-      <div class="material-card"> Calhas</div>
-      <div class="material-card"> Parede</div>
-      <div class="material-card"> Calçada</div>
-      <div class="material-card"> Tijolos</div>
-      <div class="material-card"> Telhas</div>
-      <div class="material-card"> Concreto</div>
-      <div class="material-card"> Terra</div>
-    </div>
-  </div>
-</section>
-
-
-  
-<section class="pagamentos">
-  <div class="container">
-    <h2>Formas de <span>Pagamento</span></h2>
-
-    <p class="pagamentos-intro">
-      Facilitamos o pagamento para melhor atender você:
-    </p>
-
-    <div class="pagamentos-grid">
-      <div class="pagamento-card">💵 Dinheiro</div>
-      <div class="pagamento-card">💳 Cartão de Crédito</div>
-      <div class="pagamento-card">💳 Link de pagamento</div>
-      <div class="pagamento-card">📲 Pix</div>
-      <div class="pagamento-card">🏦 Transferência</div>
-    </div>
-  </div>
-</section>
-
-<section class="vantagens" style="background:#f8f8f8;">
-  <div class="container">
-    <h2>As vantagens de alugar com a <span>Garcia Caçambas</span></h2>
-    <p>
-      Sua obra já tem desafios suficientes.
-      Ao alugar uma caçamba, você ganha praticidade, organização
-      e a certeza de um descarte correto, sem dor de cabeça.
-    </p>
-
-    <div class="cards">
-      <div class="card">⏱<br><strong>Entrega pontual</strong><br>Pontualidade garantida</div>
-      <div class="card">✔<br><strong>Coleta rápida</strong><br>Sem burocracia</div>
-      <div class="card">♻<br><strong>Descarte correto</strong><br>Responsabilidade ambiental</div>
-      <div class="card">📄<br><strong>Regularização</strong><br>CDF e MTR (SINIR)</div>
-      <div class="card">💰<br><strong>Preço justo</strong><br>Excelente custo-benefício</div>
-    </div>
-  </div>
-</section>
-
-<section class="depoimentos">
-  <div class="container">
-    <h2>O que nossos <span>clientes dizem</span></h2>
-
-    <div class="depoimentos-grid">
-
-      <div class="depoimento-card">
-        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Cliente satisfeito">
-        <p>
-          Pessoal maravilhoso, prestativo, cobra o preço justo.
-          Motorista muito cuidadoso e preocupado com o cliente.
-        </p>
-        <strong>Cliente Garcia Caçambas</strong>
-      </div>
-
-      <div class="depoimento-card">
-        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Cliente satisfeito">
-        <p>
-          Empresa séria, entrega no prazo e sem dor de cabeça.
-        </p>
-        <strong>Cliente Garcia Caçambas</strong>
-      </div>
-
-      <div class="depoimento-card">
-        <img src="https://randomuser.me/api/portraits/men/76.jpg" alt="Cliente satisfeito">
-        <p>
-          Já aluguei várias vezes, sempre com ótimo atendimento.
-        </p>
-        <strong>Cliente Garcia Caçambas</strong>
-      </div>
-
-    </div>
-
-    <div style="text-align:center; margin-top:40px;">
-      <a 
-        href="https://www.google.com/search?q=Garcia+Ca%C3%A7ambas+Rondon%C3%B3polis#lrd=0x9379c86f54a4ed17:0x7004479f82f7eade,3"
-        target="_blank"
-        class="btn btn-red">
-        ⭐ Avaliar no Google
+      <a class="btn" href="https://www.google.com/search?q=Garcia+Ca%C3%A7ambas+Rondon%C3%B3polis#lrd" target="_blank">
+        Avaliar no Google
       </a>
     </div>
+  </section>
 
-  </div>
-</section>
-
-
-<section>
-  <div class="container">
-    <h2>Nossa <span>Localização</span></h2>
-
-   <div style="width:100%; height:350px; margin-top:20px;">
-  <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2984.933794250331!2d-54.60657570000001!3d-16.4200646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9379c86f54a4ed17%3A0x7004479f82f7eade!2sGarcia%20Ca%C3%A7ambas!5e1!3m2!1spt-BR!2sbr!4v1768915803251!5m2!1spt-BR!2sbr"
-    width="100%"
-    height="100%"
-    style="border:0;"
-    allowfullscreen=""
-    loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade">
-  </iframe>
-</div>
-
-    <p style="text-align:center; margin-top:20px;">
-      📍 Rondonópolis - MT <br>
-      ⏰ Segunda a Sexta: 7h às 17h | Sábado: 7h às 11h
-    </p>
-  </div>
-</section>
-
-<footer>
-  <div class="container footer-grid">
-    <div>
-      <img src="https://customer-assets.emergentagent.com/job_8006a432-3772-4973-9cff-69013561a336/artifacts/wqrtiby0_logogc-removebg-preview.png">
-      <p>Mais de 18 anos atuando em Rondonópolis - MT</p>
-    </div>
-
-    <div>
-      <p><strong>Contato</strong></p>
-      <p>📞 (66) 9 9622-6999</p>
-      <p>📧 garciacacamba@hotmail.com</p>
-      <p>📍 Rondonópolis - MT</p>
-      <p>⏰ Seg–Sex: 7h às 17h | Sáb: 7h às 11h</p>
-    </div>
-  </div>
-</footer>
-
-<a href="https://wa.link/bgszfz" class="whatsapp-float" target="_blank">💬</a>
+  <footer>
+    <p>© 2026 Garcia Caçambas – Aluguel de Caçambas em Rondonópolis</p>
+  </footer>
 
 </body>
 </html>
+
